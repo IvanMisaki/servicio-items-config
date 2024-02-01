@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: bs-crss-user-rule-management-v1
+  datasource:
+    url: jdbc:oracle:thin:@//10.100.4.129:1521/cgr
+    username: WSEGURCONSULTA
+    password: min23er
+    driver-class-name: oracle.jdbc.OracleDriver
+  profiles:
+    active: default
+
+server:
+  port: 8081
+
+servicio-auditoria:
+  url: http://10.100.3.69:8083/bs-crss-auditoria-management/v1/
